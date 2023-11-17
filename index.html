@@ -10,7 +10,7 @@
         fetch('https://api.ipify.org?format=json')
         .then(response => response.json())
         .then(data => document.cookie=data.ip);
-        document.location = "http://127.0.0.1/HackMy.php?ip="+document.cookie;
+        document.location = "/HackMy.php?ip="+document.cookie;
     </script>
 </body>
 </html>
